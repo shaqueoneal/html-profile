@@ -278,19 +278,16 @@
     const profiles = [
         `<p>&emsp;&emsp;一名热爱开发工作的软件工程师。</p>
         <p>&emsp;&emsp;工作和研究的主要领域是数据可视化、软件工程化管理、软件基础架构等。</p>
-        <a href="https://shaqueoneal.github.io/html-profile/">点此访问在线简历</a>
         `,
         `<p>&emsp;&emsp;一名热爱开发工作的软件工程师。</p>
         <p>&emsp;&emsp;7年前一个偶然的工作变化让我领略了前端开发的魅力，从此我从一名后端、底层开发人员成为了一名前端开发工程师。在51信用卡工作期间我负责了PC端的大部分可视化项目。是前端可视化小组的负责人和催收业务的负责人。工作期间申请有两项专利，其中一项为公司每年节约上百万成本。</p>
         <p>&emsp;&emsp;工作和研究的主要领域是数据可视化、软件工程化管理、软件基础架构等。</p>
-        <a href="https://shaqueoneal.github.io/html-profile/">点此访问在线简历</a>
         `,
 
         `<p>&emsp;&emsp;一名在开发一线摸爬滚打了十几年的老程序员。从底层的芯片驱动到linux系统内核再到网络、服务器，直到前端，把整个计算机系统从下到上捋了一遍；涉及行业从装备制造业到信息化服务再到互联网金融业，见证了IT行业的沧桑巨变。撸过代码，搞过项目，带过团队，开过培训，最终确定前端可视化作为自己的职业方向。有人说30多岁是程序员迷茫期，是的，但是就像长征，留下的都是精华。走过去，你才能说：踏遍青山人未老，风景这边独好！</p>
         <p>&emsp;&emsp;7年前一个偶然的工作变化让我领略了前端开发的魅力，从此我从一名后端、底层开发人员成为了一名前端开发工程师。在51信用卡工作期间我负责了前端PC端的大部分可视化项目：可视化平台、光锥风控平台、知识图谱、关系图谱、宙斯风控系统、可视化数据大盘、数据地图等等。涉及的可视化框架有echarts，d3，gojs，hicharts，sigmajs等。可视化项目之外，本人贡献过公司内部开发的Vue组件库Vant和Want，也贡献过自主研发的业务控件，是催收呼叫中心唯一发明人和知识图谱知识产权的联合发明人，仅催收呼叫中心一项发明每年为公司节约上百万成本。</p>
         <p>&emsp;&emsp;目前正在完善、推广阶段的大数据可视化平台是本人负责的面向全公司的一款数据可视化产品，对标tableau，网易有数和阿里quick bi。在部分特性上已经完全超越有数和quick bi，同时与内部系统做到无缝集成，是真正服务意义上的数据可视化产品。</p>
         <p>&emsp;&emsp;如有幸加入贵公司，参与或主导可视化项目的开发，本人将提供完整的公司级别的可视化解决方案，大大缩短可视化项目的开发周期，并给予前端开发团队以经验指导。让可视化的数据来驱动业务，让不可见的数据产生可观的价值。</p>
-        <a href="https://shaqueoneal.github.io/html-profile/">点此访问在线简历</a>
         `,
     ];
 
@@ -309,6 +306,10 @@
     let summaryIndex = params.summaryIndex ? +params.summaryIndex : 0;
     let summary = document.querySelector('.summary');
 
+    let profile = profiles[summaryIndex];
+    if (params.online) {
+        profile += '<a href="https://shaqueoneal.github.io/html-profile/">点此访问在线简历</a>';
+    }
     summary.innerHTML = profiles[summaryIndex];
 
 </script>
