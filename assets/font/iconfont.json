@@ -1,0 +1,212 @@
+{
+  "id": "1526131",
+  "name": "self",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1228433",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "1244207",
+      "name": "知乎",
+      "font_class": "zhihu",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "1727461",
+      "name": "225默认头像",
+      "font_class": "morentouxiang",
+      "unicode": "e8c9",
+      "unicode_decimal": 59593
+    },
+    {
+      "icon_id": "5633803",
+      "name": "archive",
+      "font_class": "archive",
+      "unicode": "ef1c",
+      "unicode_decimal": 61212
+    },
+    {
+      "icon_id": "5633859",
+      "name": "bookmark",
+      "font_class": "bookmark",
+      "unicode": "ef47",
+      "unicode_decimal": 61255
+    },
+    {
+      "icon_id": "5633868",
+      "name": "briefcase",
+      "font_class": "briefcase",
+      "unicode": "ef4f",
+      "unicode_decimal": 61263
+    },
+    {
+      "icon_id": "5633880",
+      "name": "calendar",
+      "font_class": "calendar",
+      "unicode": "ef59",
+      "unicode_decimal": 61273
+    },
+    {
+      "icon_id": "5634013",
+      "name": "envelope",
+      "font_class": "envelope",
+      "unicode": "efae",
+      "unicode_decimal": 61358
+    },
+    {
+      "icon_id": "5634038",
+      "name": "file-alt",
+      "font_class": "file-alt",
+      "unicode": "efc1",
+      "unicode_decimal": 61377
+    },
+    {
+      "icon_id": "5634240",
+      "name": "mobile-alt",
+      "font_class": "mobile-alt",
+      "unicode": "f052",
+      "unicode_decimal": 61522
+    },
+    {
+      "icon_id": "5634266",
+      "name": "paper-plane",
+      "font_class": "paper-plane",
+      "unicode": "f063",
+      "unicode_decimal": 61539
+    },
+    {
+      "icon_id": "5634285",
+      "name": "phone",
+      "font_class": "phone1",
+      "unicode": "f076",
+      "unicode_decimal": 61558
+    },
+    {
+      "icon_id": "5634288",
+      "name": "phone-volume",
+      "font_class": "phone-volume",
+      "unicode": "f079",
+      "unicode_decimal": 61561
+    },
+    {
+      "icon_id": "5634331",
+      "name": "rocket",
+      "font_class": "rocket",
+      "unicode": "f09b",
+      "unicode_decimal": 61595
+    },
+    {
+      "icon_id": "5634353",
+      "name": "share-alt",
+      "font_class": "share-alt",
+      "unicode": "f0af",
+      "unicode_decimal": 61615
+    },
+    {
+      "icon_id": "5634354",
+      "name": "share-alt-square",
+      "font_class": "share-alt-square",
+      "unicode": "f0b0",
+      "unicode_decimal": 61616
+    },
+    {
+      "icon_id": "5634427",
+      "name": "table",
+      "font_class": "table",
+      "unicode": "f0ee",
+      "unicode_decimal": 61678
+    },
+    {
+      "icon_id": "5634433",
+      "name": "tags",
+      "font_class": "tags",
+      "unicode": "f0f3",
+      "unicode_decimal": 61683
+    },
+    {
+      "icon_id": "5634451",
+      "name": "th-large",
+      "font_class": "th-large",
+      "unicode": "f103",
+      "unicode_decimal": 61699
+    },
+    {
+      "icon_id": "5634452",
+      "name": "th-list",
+      "font_class": "th-list",
+      "unicode": "f104",
+      "unicode_decimal": 61700
+    },
+    {
+      "icon_id": "5634494",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "f12b",
+      "unicode_decimal": 61739
+    },
+    {
+      "icon_id": "5634516",
+      "name": "user-tie",
+      "font_class": "user-tie",
+      "unicode": "f140",
+      "unicode_decimal": 61760
+    },
+    {
+      "icon_id": "5634686",
+      "name": "git",
+      "font_class": "git",
+      "unicode": "f1b4",
+      "unicode_decimal": 61876
+    },
+    {
+      "icon_id": "5634687",
+      "name": "github",
+      "font_class": "github1",
+      "unicode": "f1b5",
+      "unicode_decimal": 61877
+    },
+    {
+      "icon_id": "5634903",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "f261",
+      "unicode_decimal": 62049
+    },
+    {
+      "icon_id": "5634904",
+      "name": "weixin",
+      "font_class": "weixin",
+      "unicode": "f262",
+      "unicode_decimal": 62050
+    },
+    {
+      "icon_id": "5634927",
+      "name": "zhihu",
+      "font_class": "zhihu1",
+      "unicode": "f276",
+      "unicode_decimal": 62070
+    },
+    {
+      "icon_id": "7239764",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e732",
+      "unicode_decimal": 59186
+    },
+    {
+      "icon_id": "9648346",
+      "name": "Mail",
+      "font_class": "Mail",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    }
+  ]
+}
