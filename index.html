@@ -273,6 +273,7 @@
 </footer><!--//footer-->
 
 </body>
+<script src="watermark.js"></script>
 <script>
     const profiles = [
         `<p>&emsp;&emsp;一名热爱开发工作的软件工程师。</p>
@@ -287,29 +288,6 @@
         <p>&emsp;&emsp;目前正在完善、推广阶段的大数据可视化平台是本人负责的面向全公司的一款数据可视化产品，对标tableau，网易有数和阿里quick bi。在部分特性上已经完全超越有数和quick bi，同时与内部系统做到无缝集成，是真正服务意义上的数据可视化产品。</p>
         <p>&emsp;&emsp;如有幸加入贵公司，参与或主导可视化项目的开发，本人将提供完整的公司级别的可视化解决方案，大大缩短可视化项目的开发周期，并给予前端开发团队以经验指导。让可视化的数据来驱动业务，让不可见的数据产生可观的价值。</p>`
     ];
-
-    function parseUrlParam(paramStr) {
-        let o = {};
-        if (!paramStr) {
-            return o;
-        }
-
-        if (paramStr[0] === '?') {
-            paramStr = paramStr.substr(1);
-        }
-
-        let aoAttr = paramStr.split('&');
-        aoAttr.map((d, i) => {
-            let aTuple = d.split('=');
-            if (aTuple[1] !== undefined) {
-                o[aTuple[0]] = aTuple[1];
-            } else {
-                o[aTuple[0]] = true;
-            }
-        });
-
-        return o;
-    }
 
     let params = parseUrlParam(location.search);
     if (params.name) {
