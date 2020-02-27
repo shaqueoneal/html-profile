@@ -63,6 +63,16 @@
 			</div><!--//item-->
 		</div><!--//education-container-->
 
+        <div class="interests-container container-block">
+            <h2 class="container-block-title">资质证明</h2>
+            <ul class="list-unstyled interests-list">
+                <li>软件设计师</li>
+            </ul>
+            <ul class="list-unstyled interests-list">
+                <li>H3C CMMI研发流程认证</li>
+            </ul>
+        </div><!--//interests-->
+
 		<div class="languages-container container-block">
 			<h2 class="container-block-title">语言能力</h2>
 			<ul class="list-unstyled interests-list">
@@ -268,7 +278,7 @@
 
 <footer class="footer">
 	<div class="text-center">
-		   <small class="copyright">Copyright &copy; 2019.zhaoshenglu All rights reserved.</small>
+        <small class="copyright">Copyright &copy <span id="year">2019</span>.zhaoshenglu All rights reserved.</small>
 	</div><!--//container-->
 </footer><!--//footer-->
 
@@ -312,6 +322,8 @@
     }
     summary.innerHTML = profile;
 
+    let year = document.querySelector('#year');
+    year.innerText = (new Date()).getFullYear();
 </script>
 </html>
 
