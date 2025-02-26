@@ -28,7 +28,7 @@
 <div class="wrapper">
 	<div class="sidebar-wrapper">
 		<div class="profile-container">
-			<img class="profile" src="assets/images/profile02.JPG" style="width: 100px; border-radius: 100px;" alt="" />
+			<img class="profile" src="assets/images/profile02.png" style="width: 100px; border-radius: 100px;" alt="" />
 			<h1 class="name">赵盛璐</h1>
 			<h3 class="tagline">资深软件工程师</h3>
 		</div><!--//profile-container-->
@@ -43,7 +43,7 @@
 				<li class="weixin"><i class="iconfont icon-weixin"></i><a href="#">solos001</a></li>
 				<li class="zhihu"><i class="iconfont icon-zhihu1"></i><a href="https://www.zhihu.com/people/solos-31/posts">solos</a></li>
 				<li class="language-switch" style="margin-top: 10px;">
-					<a href="#" onclick="switchLanguage('zh'); return false;" style="margin-right: 5px;">中文</a> | 
+					<a href="#" onclick="switchLanguage('zh'); return false;" style="margin-right: 5px;">中文</a> |
 					<a href="#" onclick="switchLanguage('en'); return false;" style="margin-left: 5px;">English</a>
 				</li>
 			</ul>
@@ -445,17 +445,17 @@ function updateBasicInfo(lang) {
         'zh': '基本信息',
         'en': 'Basic Information'
     };
-    
+
     const basicInfoItems = {
         'zh': ['性别', '出生年月', '籍贯', '政治面貌', '婚姻状况'],
         'en': ['Gender', 'Date of Birth', 'Hometown', 'Political Status', 'Marital Status']
     };
-    
+
     const basicInfoValues = {
         'zh': ['男', '1982年11月', '杭州', '中共党员', '已婚'],
         'en': ['Male', 'November 1982', 'Hangzhou', 'CPC Member', 'Married']
     };
-    
+
     // 更新标题 - 使用更精确的选择器
     const basicInfoContainer = document.querySelector('.basic-info-container');
     if (basicInfoContainer) {
@@ -463,7 +463,7 @@ function updateBasicInfo(lang) {
         if (title) {
             title.innerText = basicInfoTitle[lang];
         }
-        
+
         // 更新项目
         const basicInfoList = basicInfoContainer.querySelectorAll('.interests-list li');
         basicInfoList.forEach((item, index) => {
@@ -480,17 +480,17 @@ function updateEducation(lang) {
         'zh': '教育背景',
         'en': 'Education'
     };
-    
+
     const degreeInfo = {
         'zh': '计算机科学与技术专业本科',
         'en': 'Bachelor of Computer Science and Technology'
     };
-    
+
     const universityInfo = {
         'zh': '浙江工业大学',
         'en': 'Zhejiang University of Technology'
     };
-    
+
     // 更新标题
     const educationContainer = document.querySelector('.education-container');
     if (educationContainer) {
@@ -498,13 +498,13 @@ function updateEducation(lang) {
         if (title) {
             title.innerText = educationTitle[lang];
         }
-        
+
         // 更新学位信息
         const degreeElement = educationContainer.querySelector('.degree');
         if (degreeElement) {
             degreeElement.innerText = degreeInfo[lang];
         }
-        
+
         // 更新大学信息
         const universityElement = educationContainer.querySelector('.meta');
         if (universityElement) {
@@ -519,7 +519,7 @@ function updateQualifications(lang) {
         'zh': '资质证明',
         'en': 'Qualifications'
     };
-    
+
     const qualifications = {
         'zh': [
             'NPDP产品经理国际资格认证',
@@ -538,7 +538,7 @@ function updateQualifications(lang) {
             'Hundsun Certified Star Interviewer'
         ]
     };
-    
+
     // 更新标题 - 使用更精确的选择器
     const qualificationsContainer = document.querySelector('.interests-container');
     if (qualificationsContainer) {
@@ -546,7 +546,7 @@ function updateQualifications(lang) {
         if (title) {
             title.innerText = qualificationsTitle[lang];
         }
-        
+
         // 资质证明部分的HTML结构特殊，每个项目都在单独的ul中
         const allLists = qualificationsContainer.querySelectorAll('.interests-list');
         allLists.forEach((list, index) => {
@@ -564,17 +564,17 @@ function updateLanguages(lang) {
         'zh': '语言能力',
         'en': 'Languages'
     };
-    
+
     const languageItems = {
         'zh': ['汉语', 'English'],
         'en': ['Chinese', 'English']
     };
-    
+
     const languageLevels = {
         'zh': ['精通', 'CET6'],
         'en': ['Native', 'CET6']
     };
-    
+
     // 更新标题 - 使用更精确的选择器
     const languagesContainer = document.querySelector('.languages-container');
     if (languagesContainer) {
@@ -582,7 +582,7 @@ function updateLanguages(lang) {
         if (title) {
             title.innerText = languagesTitle[lang];
         }
-        
+
         // 更新语言能力列表
         const languageElements = languagesContainer.querySelectorAll('.interests-list li');
         languageElements.forEach((element, index) => {
@@ -599,12 +599,12 @@ function updateInterests(lang) {
         'zh': '兴趣爱好',
         'en': 'Interests'
     };
-    
+
     const interests = {
         'zh': ['探索未知世界', '挑战能力边界'],
         'en': ['Exploring the Unknown World', 'Challenging Capability Boundaries']
     };
-    
+
     // 更新标题和内容
     const interestsContainers = document.querySelectorAll('.interests-container');
     if (interestsContainers.length > 1) {
@@ -613,7 +613,7 @@ function updateInterests(lang) {
         if (title) {
             title.innerText = interestsTitle[lang];
         }
-        
+
         // 更新兴趣爱好列表
         const interestElements = interestsContainer.querySelectorAll('.interests-list li');
         interestElements.forEach((element, index) => {
@@ -630,7 +630,7 @@ function updateSectionTitles(lang) {
         'zh': ['个人简介', '工作经历', '项目经历', '近期技术分享', '专业技能'],
         'en': ['Profile', 'Work Experience', 'Projects', 'Recent Technical Sharing', 'Professional Skills']
     };
-    
+
     // 更新主要部分标题
     const mainSectionTitles = document.querySelectorAll('.main-wrapper .section-title');
     mainSectionTitles.forEach((title, index) => {
@@ -651,17 +651,17 @@ function updateWorkExperience(lang) {
         'zh': ['全栈开发', '前端技术专家', '前端开发工程师', '研发工程师', '开发工程师', '软件开发工程师'],
         'en': ['Full Stack Developer', 'Frontend Technical Expert', 'Frontend Developer', 'R&D Engineer', 'Development Engineer', 'Software Developer']
     };
-    
+
     const timeLabels = {
         'zh': ['至今', ''],
         'en': ['Present', '']
     };
-    
+
     const companyNames = {
         'zh': ['', '恒生电子', '51信用卡有限公司', '杭州华三通信技术有限公司', '杭州东蓝科技有限公司', '浙江浙大中控电气技术有限公司'],
         'en': ['', 'Hundsun Electronics', '51 Credit Card Co., Ltd.', 'Hangzhou H3C Technologies Co., Ltd.', 'Hangzhou Donglan Technology Co., Ltd.', 'Zhejiang Supcon Electric Co., Ltd.']
     };
-    
+
     // 更新职位名称
     const jobTitleElements = document.querySelectorAll('.experiences-section .job-title');
     jobTitleElements.forEach((element, index) => {
@@ -669,7 +669,7 @@ function updateWorkExperience(lang) {
             element.innerText = jobTitles[lang][index];
         }
     });
-    
+
     // 更新公司名称
     const companyElements = document.querySelectorAll('.experiences-section .company');
     companyElements.forEach((element, index) => {
@@ -677,7 +677,7 @@ function updateWorkExperience(lang) {
             element.innerText = companyNames[lang][index];
         }
     });
-    
+
     // 更新"至今"文本
     const timeElements = document.querySelectorAll('.experiences-section .time');
     if (timeElements.length > 0) {
@@ -690,50 +690,50 @@ function updateWorkExperience(lang) {
             }
         }
     }
-    
+
     // 更新工作描述
     if (lang === 'en') {
         // 英文版工作描述
         const workDetails = document.querySelectorAll('.experiences-section .details');
-        
+
         // 全栈开发
         if (workDetails[0]) {
             workDetails[0].innerHTML = '<p>• WeChat Mini Program Development</p>';
         }
-        
+
         // 前端技术专家
         if (workDetails[1]) {
-            workDetails[1].innerHTML = 
+            workDetails[1].innerHTML =
                 '<p>• Low-code Product Manager, Development Coach</p>' +
                 '<p>• Data Application, Report Team Leader, Project Manager, Architect, Developer</p>' +
                 '<p>• Design-hub Product Manager, Project Manager, Architect, Developer</p>' +
                 '<p>• Big Data Platform Frontend Developer, Frontend Lead</p>';
         }
-        
+
         // 前端开发工程师
         if (workDetails[2]) {
-            workDetails[2].innerHTML = 
+            workDetails[2].innerHTML =
                 '<p>• Frontend Big Data Visualization Lead</p>' +
                 '<p>• Frontend Collection Business Lead</p>' +
                 '<p>• Frontend Vue Component Library Contributor</p>';
         }
-        
+
         // 研发工程师
         if (workDetails[3]) {
-            workDetails[3].innerHTML = 
+            workDetails[3].innerHTML =
                 '<p>• UIS Unified Data Center Management System Frontend and Backend Development</p>' +
                 '<p>• Router Chip Kernel and Driver Development</p>' +
                 '<p>• Video Conference System Controller and Client Development</p>';
         }
-        
+
         // 开发工程师
         if (workDetails[4]) {
-            workDetails[4].innerHTML = 
+            workDetails[4].innerHTML =
                 '<p>• Enterprise Information Platform Construction</p>' +
                 '<p>• Real-time Database System Development</p>' +
                 '<p>• Data Collection System Development</p>';
         }
-        
+
         // 软件开发工程师
         if (workDetails[5]) {
             workDetails[5].innerHTML = '<p>• Single-chip HMI Development</p>';
@@ -741,45 +741,45 @@ function updateWorkExperience(lang) {
     } else {
         // 中文版工作描述（恢复原始内容）
         const workDetails = document.querySelectorAll('.experiences-section .details');
-        
+
         // 全栈开发
         if (workDetails[0]) {
             workDetails[0].innerHTML = '<p>• 微信小程序开发 </p>';
         }
-        
+
         // 前端技术专家
         if (workDetails[1]) {
-            workDetails[1].innerHTML = 
+            workDetails[1].innerHTML =
                 '<p>• 低码产品经理、开发教练 </p>' +
                 '<p>• 数据应用、报表团队长、项目经理、架构师、开发者</p>' +
                 '<p>• design-hub产品经理、项目经理、架构师、开发者</p>' +
                 '<p>• 大数据平台前端开发者、前端负责人</p>';
         }
-        
+
         // 前端开发工程师
         if (workDetails[2]) {
-            workDetails[2].innerHTML = 
+            workDetails[2].innerHTML =
                 '<p>• 前端大数据可视化负责人</p>' +
                 '<p>• 前端催收业务负责人</p>' +
                 '<p>• 前端Vue组件库贡献者</p>';
         }
-        
+
         // 研发工程师
         if (workDetails[3]) {
-            workDetails[3].innerHTML = 
+            workDetails[3].innerHTML =
                 '<p>• UIS统一数据中心管理系统前、后端开发</p>' +
                 '<p>• 路由器芯片内核、驱动开发</p>' +
                 '<p>• 视频会议系统主控和客户端开发</p>';
         }
-        
+
         // 开发工程师
         if (workDetails[4]) {
-            workDetails[4].innerHTML = 
+            workDetails[4].innerHTML =
                 '<p>• 企业信息化平台建设</p>' +
                 '<p>• 实时数据库系统开发</p>' +
                 '<p>• 数据采集系统开发</p>';
         }
-        
+
         // 软件开发工程师
         if (workDetails[5]) {
             workDetails[5].innerHTML = '<p>• 单片机人机界面开发</p>';
@@ -793,7 +793,7 @@ function updateCopyright(lang) {
         'zh': `Copyright &copy ${(new Date()).getFullYear()}.zhaoshenglu All rights reserved.`,
         'en': `Copyright &copy ${(new Date()).getFullYear()}.zhaoshenglu All rights reserved.`
     };
-    
+
     // 更新版权信息
     const copyrightElement = document.querySelector('.copyright');
     if (copyrightElement) {
@@ -814,7 +814,7 @@ function applyLanguage(lang) {
         document.querySelector('.tagline').innerText = 'Senior Software Engineer';
         document.querySelector('.summary').innerHTML = profilesEn[summaryIndex];
     }
-    
+
     // 更新各部分内容
     updateBasicInfo(lang);
     updateEducation(lang);
@@ -891,17 +891,17 @@ const projectIntro = {
 function updateProjects(lang) {
     const projectTitles = document.querySelectorAll('.projects-section .project-title');
     const projectTaglines = document.querySelectorAll('.projects-section .project-tagline');
-    
+
     projectTitles.forEach((title, index) => {
         if (projects[lang][index]) {
             title.querySelector('a').textContent = projects[lang][index];
         }
     });
-    
+
     projectTaglines.forEach((tagline, index) => {
         if (projects[lang][index]) {
-            tagline.textContent = lang === 'en' ? 
-                `Hundsun ${projects[lang][index]}` : 
+            tagline.textContent = lang === 'en' ?
+                `Hundsun ${projects[lang][index]}` :
                 `恒生${projects['zh'][index]}`;
         }
     });
