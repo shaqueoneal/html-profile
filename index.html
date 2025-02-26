@@ -28,9 +28,9 @@
 <div class="wrapper">
 	<div class="sidebar-wrapper">
 		<div class="profile-container">
-			<img class="profile" src="assets/images/profile.png" style="width: 100px; border-radius: 100px;" alt="" />
+			<img class="profile" src="assets/images/profile02.JPG" style="width: 100px; border-radius: 100px;" alt="" />
 			<h1 class="name">赵盛璐</h1>
-			<h3 class="tagline">IT规划管理</h3>
+			<h3 class="tagline">资深软件工程师</h3>
 		</div><!--//profile-container-->
 
 		<div class="contact-container container-block">
@@ -42,9 +42,13 @@
 				<!-- <li class="github"><i class="fab fa-github"></i><a href="#">github.com/username</a></li> -->
 				<li class="weixin"><i class="iconfont icon-weixin"></i><a href="#">solos001</a></li>
 				<li class="zhihu"><i class="iconfont icon-zhihu1"></i><a href="https://www.zhihu.com/people/solos-31/posts">solos</a></li>
+				<li class="language-switch" style="margin-top: 10px;">
+					<a href="#" onclick="switchLanguage('zh'); return false;" style="margin-right: 5px;">中文</a> | 
+					<a href="#" onclick="switchLanguage('en'); return false;" style="margin-left: 5px;">English</a>
+				</li>
 			</ul>
 		</div><!--//contact-container-->
-		<div class="languages-container container-block">
+		<div class="basic-info-container container-block">
 			<h2 class="container-block-title">基本信息</h2>
 			<ul class="list-unstyled interests-list">
 			    <li>性别 <span class="lang-desc">男</span></li>
@@ -115,6 +119,18 @@
 		<section class="section experiences-section">
 			<h2 class="section-title"><span class="icon-holder"><i class="iconfont icon-briefcase"></i></span>工作经历</h2>
 
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title">全栈开发</h3>
+                        <div class="time">2024.06 - 至今</div>
+                    </div><!--//upper-row-->
+                    <div class="company"></div>
+                </div><!--//meta-->
+                <div class="details">
+                    <p>• 微信小程序开发 </p>
+                </div><!--//details-->
+            </div><!--//item-->
             <div class="item">
                 <div class="meta">
                     <div class="upper-row">
@@ -212,31 +228,31 @@
 
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>数据可视化平台</a></span> - <span class="project-tagline">提供公司级别的数据可视化服务的平台</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>光锥可视化</a></span> - <span class="project-tagline">一站式风控平台</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>知识图谱</a></span> - <span class="project-tagline">支持多维度多层级扩展的借款人关系图谱</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>陀飞轮</a></span> - <span class="project-tagline">公司级别大数据任务执行平台</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>元数据管理平台</a></span> - <span class="project-tagline">数据生命周期管理平台</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>数据地图</a></span> - <span class="project-tagline">大数据搜索门户，包含数据表的血缘关系</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>数据大盘</a></span> - <span class="project-tagline">贷款实时数据可视化大盘</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>催收系统</a></span> - <span class="project-tagline">金融三大支柱系统中业务最为复杂同时在线人数最多的系统</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 <!--			<div class="item">-->
 <!--				<span class="project-title"><a>Titan前端开发框架</a></span> - <span class="project-tagline">后端人员也会用的前端框架</span>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;&gt;-->
 		</section><!--//section-->
 
 		<section class="section projects-section">
@@ -291,8 +307,8 @@
 		<section class="skills-section section">
 			<h2 class="section-title"><span class="icon-holder"><i class="iconfont icon-rocket"></i></span>专业技能</h2>
 			<div class="skillset">
-				<div class="item">
-					<h3 class="level-title">HTML &amp; CSS</h3>
+                <div class="item">
+					<h3 class="level-title">Javascript</h3>
 					<div class="progress level-bar">
 						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
@@ -303,24 +319,42 @@
 						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div><!--//item-->
-				<div class="item">
-					<h3 class="level-title">Javascript &amp; jQuery</h3>
+                <div class="item">
+					<h3 class="level-title">HTML &amp; CSS</h3>
 					<div class="progress level-bar">
 						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div><!--//item-->
+                <div class="item">
+                    <h3 class="level-title">Node.js</h3>
+                    <div class="progress level-bar">
+                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div><!--//item-->
+                <div class="item">
+					<h3 class="level-title">Mini-program</h3>
+					<div class="progress level-bar">
+						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div><!--//item-->
+                <div class="item">
+					<h3 class="level-title">React </h3>
+					<div class="progress level-bar">
+						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div><!--//item-->
+
+                <div class="item">
+					<h3 class="level-title">Axure</h3>
+					<div class="progress level-bar">
+						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div><!--//item-->
 
 				<div class="item">
 					<h3 class="level-title">c </h3>
 					<div class="progress level-bar">
-						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				</div><!--//item-->
-
-				<div class="item">
-					<h3 class="level-title">Node.js</h3>
-					<div class="progress level-bar">
-						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						<div class="progress-bar theme-progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div><!--//item-->
 
@@ -349,53 +383,551 @@
 	</div><!--//container-->
 </footer><!--//footer-->
 
+<script>
+// 解析URL参数的函数（如果您的代码中没有，请添加）
+function parseUrlParam(url) {
+    const params = {};
+    const queryString = url.split('?')[1];
+    if (queryString) {
+        const pairs = queryString.split('&');
+        pairs.forEach(pair => {
+            const [key, value] = pair.split('=');
+            params[key] = value;
+        });
+    }
+    return params;
+}
+
+const profiles = [
+    `<p>&emsp;&emsp;一名懂产品和项目管理的软件开发工程师。</p>
+    <p>&emsp;&emsp;10余年软件开发经验，全栈（偏前端），工作和研究主要领域为BI、报表、低码、数据可视化、软件工程化管理和软件基础架构等。</p>
+    <p>&emsp;&emsp;开发、设计的主要产品包括web应用、PaaS、SaaS、小程序等。</p>`,
+];
+
+// 英文版个人简介
+const profilesEn = [
+    `<p>&emsp;&emsp;A software development engineer with product and project management expertise.</p>
+    <p>&emsp;&emsp;Over 10 years of software development experience, full-stack (frontend focused), working and researching mainly in BI, reporting, low-code, data visualization, software engineering management, and software infrastructure.</p>
+    <p>&emsp;&emsp;Developed and designed products including web applications, PaaS, SaaS, mini-programs, etc.</p>`,
+];
+
+let params = parseUrlParam(location.search);
+if (params.name) {
+    let name = document.querySelector('.name');
+    name.innerText = decodeURIComponent(params.name);
+}
+
+if (params.mobile) {
+    let mobile = document.querySelector('.mobile a');
+    mobile.innerText = params.mobile;
+    mobile.href = 'tel:' + params.mobile;
+}
+
+let summaryIndex = params.summaryIndex ? +params.summaryIndex : 0;
+let summary = document.querySelector('.summary');
+
+let profile = profiles[summaryIndex];
+if (params.online) {
+    profile += '<a href="https://shaqueoneal.github.io/html-profile/">点此访问在线简历</a>';
+}
+summary.innerHTML = profile;
+
+let year = document.querySelector('#year');
+year.innerText = (new Date()).getFullYear();
+
+// 语言切换相关代码
+// 默认语言为中文
+let currentLanguage = localStorage.getItem('language') || 'zh';
+
+// 更新基本信息
+function updateBasicInfo(lang) {
+    const basicInfoTitle = {
+        'zh': '基本信息',
+        'en': 'Basic Information'
+    };
+    
+    const basicInfoItems = {
+        'zh': ['性别', '出生年月', '籍贯', '政治面貌', '婚姻状况'],
+        'en': ['Gender', 'Date of Birth', 'Hometown', 'Political Status', 'Marital Status']
+    };
+    
+    const basicInfoValues = {
+        'zh': ['男', '1982年11月', '杭州', '中共党员', '已婚'],
+        'en': ['Male', 'November 1982', 'Hangzhou', 'CPC Member', 'Married']
+    };
+    
+    // 更新标题 - 使用更精确的选择器
+    const basicInfoContainer = document.querySelector('.basic-info-container');
+    if (basicInfoContainer) {
+        const title = basicInfoContainer.querySelector('.container-block-title');
+        if (title) {
+            title.innerText = basicInfoTitle[lang];
+        }
+        
+        // 更新项目
+        const basicInfoList = basicInfoContainer.querySelectorAll('.interests-list li');
+        basicInfoList.forEach((item, index) => {
+            if (item && index < basicInfoItems[lang].length) {
+                item.innerHTML = `${basicInfoItems[lang][index]} <span class="lang-desc">${basicInfoValues[lang][index]}</span>`;
+            }
+        });
+    }
+}
+
+// 更新教育背景
+function updateEducation(lang) {
+    const educationTitle = {
+        'zh': '教育背景',
+        'en': 'Education'
+    };
+    
+    const degreeInfo = {
+        'zh': '计算机科学与技术专业本科',
+        'en': 'Bachelor of Computer Science and Technology'
+    };
+    
+    const universityInfo = {
+        'zh': '浙江工业大学',
+        'en': 'Zhejiang University of Technology'
+    };
+    
+    // 更新标题
+    const educationContainer = document.querySelector('.education-container');
+    if (educationContainer) {
+        const title = educationContainer.querySelector('.container-block-title');
+        if (title) {
+            title.innerText = educationTitle[lang];
+        }
+        
+        // 更新学位信息
+        const degreeElement = educationContainer.querySelector('.degree');
+        if (degreeElement) {
+            degreeElement.innerText = degreeInfo[lang];
+        }
+        
+        // 更新大学信息
+        const universityElement = educationContainer.querySelector('.meta');
+        if (universityElement) {
+            universityElement.innerText = universityInfo[lang];
+        }
+    }
+}
+
+// 更新资质证明
+function updateQualifications(lang) {
+    const qualificationsTitle = {
+        'zh': '资质证明',
+        'en': 'Qualifications'
+    };
+    
+    const qualifications = {
+        'zh': [
+            'NPDP产品经理国际资格认证',
+            'HSPMP项目管理能力认证',
+            '软件设计师',
+            '恒生证券从业资格认证',
+            '恒生认证导师',
+            '恒生认证星级面试官'
+        ],
+        'en': [
+            'NPDP Product Manager International Certification',
+            'HSPMP Project Management Capability Certification',
+            'Software Designer',
+            'Hundsun Securities Practitioner Qualification',
+            'Hundsun Certified Mentor',
+            'Hundsun Certified Star Interviewer'
+        ]
+    };
+    
+    // 更新标题 - 使用更精确的选择器
+    const qualificationsContainer = document.querySelector('.interests-container');
+    if (qualificationsContainer) {
+        const title = qualificationsContainer.querySelector('.container-block-title');
+        if (title) {
+            title.innerText = qualificationsTitle[lang];
+        }
+        
+        // 资质证明部分的HTML结构特殊，每个项目都在单独的ul中
+        const allLists = qualificationsContainer.querySelectorAll('.interests-list');
+        allLists.forEach((list, index) => {
+            const item = list.querySelector('li');
+            if (item && index < qualifications[lang].length) {
+                item.innerText = qualifications[lang][index];
+            }
+        });
+    }
+}
+
+// 更新语言能力
+function updateLanguages(lang) {
+    const languagesTitle = {
+        'zh': '语言能力',
+        'en': 'Languages'
+    };
+    
+    const languageItems = {
+        'zh': ['汉语', 'English'],
+        'en': ['Chinese', 'English']
+    };
+    
+    const languageLevels = {
+        'zh': ['精通', 'CET6'],
+        'en': ['Native', 'CET6']
+    };
+    
+    // 更新标题 - 使用更精确的选择器
+    const languagesContainer = document.querySelector('.languages-container');
+    if (languagesContainer) {
+        const title = languagesContainer.querySelector('.container-block-title');
+        if (title) {
+            title.innerText = languagesTitle[lang];
+        }
+        
+        // 更新语言能力列表
+        const languageElements = languagesContainer.querySelectorAll('.interests-list li');
+        languageElements.forEach((element, index) => {
+            if (element && index < languageItems[lang].length) {
+                element.innerHTML = `${languageItems[lang][index]} <span class="lang-desc">${languageLevels[lang][index]}</span>`;
+            }
+        });
+    }
+}
+
+// 更新兴趣爱好
+function updateInterests(lang) {
+    const interestsTitle = {
+        'zh': '兴趣爱好',
+        'en': 'Interests'
+    };
+    
+    const interests = {
+        'zh': ['探索未知世界', '挑战能力边界'],
+        'en': ['Exploring the Unknown World', 'Challenging Capability Boundaries']
+    };
+    
+    // 更新标题和内容
+    const interestsContainers = document.querySelectorAll('.interests-container');
+    if (interestsContainers.length > 1) {
+        const interestsContainer = interestsContainers[interestsContainers.length - 1]; // 最后一个兴趣容器
+        const title = interestsContainer.querySelector('.container-block-title');
+        if (title) {
+            title.innerText = interestsTitle[lang];
+        }
+        
+        // 更新兴趣爱好列表
+        const interestElements = interestsContainer.querySelectorAll('.interests-list li');
+        interestElements.forEach((element, index) => {
+            if (element && index < interests[lang].length) {
+                element.innerText = interests[lang][index];
+            }
+        });
+    }
+}
+
+// 更新标题
+function updateSectionTitles(lang) {
+    const sectionTitles = {
+        'zh': ['个人简介', '工作经历', '项目经历', '近期技术分享', '专业技能'],
+        'en': ['Profile', 'Work Experience', 'Projects', 'Recent Technical Sharing', 'Professional Skills']
+    };
+    
+    // 更新主要部分标题
+    const mainSectionTitles = document.querySelectorAll('.main-wrapper .section-title');
+    mainSectionTitles.forEach((title, index) => {
+        if (index < sectionTitles[lang].length) {
+            const icon = title.querySelector('.icon-holder');
+            if (icon) {
+                title.innerHTML = '';
+                title.appendChild(icon);
+                title.appendChild(document.createTextNode(sectionTitles[lang][index]));
+            }
+        }
+    });
+}
+
+// 更新工作经历
+function updateWorkExperience(lang) {
+    const jobTitles = {
+        'zh': ['全栈开发', '前端技术专家', '前端开发工程师', '研发工程师', '开发工程师', '软件开发工程师'],
+        'en': ['Full Stack Developer', 'Frontend Technical Expert', 'Frontend Developer', 'R&D Engineer', 'Development Engineer', 'Software Developer']
+    };
+    
+    const timeLabels = {
+        'zh': ['至今', ''],
+        'en': ['Present', '']
+    };
+    
+    const companyNames = {
+        'zh': ['', '恒生电子', '51信用卡有限公司', '杭州华三通信技术有限公司', '杭州东蓝科技有限公司', '浙江浙大中控电气技术有限公司'],
+        'en': ['', 'Hundsun Electronics', '51 Credit Card Co., Ltd.', 'Hangzhou H3C Technologies Co., Ltd.', 'Hangzhou Donglan Technology Co., Ltd.', 'Zhejiang Supcon Electric Co., Ltd.']
+    };
+    
+    // 更新职位名称
+    const jobTitleElements = document.querySelectorAll('.experiences-section .job-title');
+    jobTitleElements.forEach((element, index) => {
+        if (index < jobTitles[lang].length) {
+            element.innerText = jobTitles[lang][index];
+        }
+    });
+    
+    // 更新公司名称
+    const companyElements = document.querySelectorAll('.experiences-section .company');
+    companyElements.forEach((element, index) => {
+        if (element && companyNames[lang][index]) {
+            element.innerText = companyNames[lang][index];
+        }
+    });
+    
+    // 更新"至今"文本
+    const timeElements = document.querySelectorAll('.experiences-section .time');
+    if (timeElements.length > 0) {
+        const firstTimeElement = timeElements[0];
+        if (firstTimeElement) {
+            if (firstTimeElement.innerText.includes('至今')) {
+                firstTimeElement.innerText = firstTimeElement.innerText.replace('至今', timeLabels[lang][0]);
+            } else if (firstTimeElement.innerText.includes('Present')) {
+                firstTimeElement.innerText = firstTimeElement.innerText.replace('Present', timeLabels[lang][0]);
+            }
+        }
+    }
+    
+    // 更新工作描述
+    if (lang === 'en') {
+        // 英文版工作描述
+        const workDetails = document.querySelectorAll('.experiences-section .details');
+        
+        // 全栈开发
+        if (workDetails[0]) {
+            workDetails[0].innerHTML = '<p>• WeChat Mini Program Development</p>';
+        }
+        
+        // 前端技术专家
+        if (workDetails[1]) {
+            workDetails[1].innerHTML = 
+                '<p>• Low-code Product Manager, Development Coach</p>' +
+                '<p>• Data Application, Report Team Leader, Project Manager, Architect, Developer</p>' +
+                '<p>• Design-hub Product Manager, Project Manager, Architect, Developer</p>' +
+                '<p>• Big Data Platform Frontend Developer, Frontend Lead</p>';
+        }
+        
+        // 前端开发工程师
+        if (workDetails[2]) {
+            workDetails[2].innerHTML = 
+                '<p>• Frontend Big Data Visualization Lead</p>' +
+                '<p>• Frontend Collection Business Lead</p>' +
+                '<p>• Frontend Vue Component Library Contributor</p>';
+        }
+        
+        // 研发工程师
+        if (workDetails[3]) {
+            workDetails[3].innerHTML = 
+                '<p>• UIS Unified Data Center Management System Frontend and Backend Development</p>' +
+                '<p>• Router Chip Kernel and Driver Development</p>' +
+                '<p>• Video Conference System Controller and Client Development</p>';
+        }
+        
+        // 开发工程师
+        if (workDetails[4]) {
+            workDetails[4].innerHTML = 
+                '<p>• Enterprise Information Platform Construction</p>' +
+                '<p>• Real-time Database System Development</p>' +
+                '<p>• Data Collection System Development</p>';
+        }
+        
+        // 软件开发工程师
+        if (workDetails[5]) {
+            workDetails[5].innerHTML = '<p>• Single-chip HMI Development</p>';
+        }
+    } else {
+        // 中文版工作描述（恢复原始内容）
+        const workDetails = document.querySelectorAll('.experiences-section .details');
+        
+        // 全栈开发
+        if (workDetails[0]) {
+            workDetails[0].innerHTML = '<p>• 微信小程序开发 </p>';
+        }
+        
+        // 前端技术专家
+        if (workDetails[1]) {
+            workDetails[1].innerHTML = 
+                '<p>• 低码产品经理、开发教练 </p>' +
+                '<p>• 数据应用、报表团队长、项目经理、架构师、开发者</p>' +
+                '<p>• design-hub产品经理、项目经理、架构师、开发者</p>' +
+                '<p>• 大数据平台前端开发者、前端负责人</p>';
+        }
+        
+        // 前端开发工程师
+        if (workDetails[2]) {
+            workDetails[2].innerHTML = 
+                '<p>• 前端大数据可视化负责人</p>' +
+                '<p>• 前端催收业务负责人</p>' +
+                '<p>• 前端Vue组件库贡献者</p>';
+        }
+        
+        // 研发工程师
+        if (workDetails[3]) {
+            workDetails[3].innerHTML = 
+                '<p>• UIS统一数据中心管理系统前、后端开发</p>' +
+                '<p>• 路由器芯片内核、驱动开发</p>' +
+                '<p>• 视频会议系统主控和客户端开发</p>';
+        }
+        
+        // 开发工程师
+        if (workDetails[4]) {
+            workDetails[4].innerHTML = 
+                '<p>• 企业信息化平台建设</p>' +
+                '<p>• 实时数据库系统开发</p>' +
+                '<p>• 数据采集系统开发</p>';
+        }
+        
+        // 软件开发工程师
+        if (workDetails[5]) {
+            workDetails[5].innerHTML = '<p>• 单片机人机界面开发</p>';
+        }
+    }
+}
+
+// 更新版权信息
+function updateCopyright(lang) {
+    const copyright = {
+        'zh': `Copyright &copy ${(new Date()).getFullYear()}.zhaoshenglu All rights reserved.`,
+        'en': `Copyright &copy ${(new Date()).getFullYear()}.zhaoshenglu All rights reserved.`
+    };
+    
+    // 更新版权信息
+    const copyrightElement = document.querySelector('.copyright');
+    if (copyrightElement) {
+        copyrightElement.innerHTML = copyright[lang];
+    }
+}
+
+// 应用语言设置
+function applyLanguage(lang) {
+    if (lang === 'zh') {
+        // 应用中文
+        document.querySelector('.name').innerText = '赵盛璐';
+        document.querySelector('.tagline').innerText = '资深软件工程师';
+        document.querySelector('.summary').innerHTML = profiles[summaryIndex];
+    } else if (lang === 'en') {
+        // 应用英文
+        document.querySelector('.name').innerText = 'Shenglu Zhao';
+        document.querySelector('.tagline').innerText = 'Senior Software Engineer';
+        document.querySelector('.summary').innerHTML = profilesEn[summaryIndex];
+    }
+    
+    // 更新各部分内容
+    updateBasicInfo(lang);
+    updateEducation(lang);
+    updateQualifications(lang);
+    updateLanguages(lang);
+    updateInterests(lang);
+    updateSectionTitles(lang);
+    updateWorkExperience(lang);
+    updateCopyright(lang);
+    updateProjectIntro(lang);
+    updateProjects(lang);
+    updateTechShares(lang);
+}
+
+// 切换语言函数
+function switchLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    applyLanguage(lang);
+}
+
+// 页面加载时应用保存的语言设置
+document.addEventListener('DOMContentLoaded', function() {
+    applyLanguage(currentLanguage);
+});
+
+// 在profilesEn数组后添加以下内容
+const projects = {
+    'zh': [
+        '低码平台',
+        '数据应用平台',
+        'design-hub',
+        '视频云剪辑平台',
+        '大数据开发平台'
+    ],
+    'en': [
+        'Low-code Platform',
+        'Data Application Platform',
+        'design-hub',
+        'Video Cloud Editing Platform',
+        'Big Data Development Platform'
+    ]
+};
+
+const techShares = {
+    'zh': [
+        '恒生BI简介',
+        '数据应用架构介绍及功能演示',
+        '用design-hub提升工程能力',
+        '恒生数据应用平台介绍',
+        '恒生前端开发指南'
+    ],
+    'en': [
+        'Introduction to Hundsun BI',
+        'Data Application Architecture and Demo',
+        'Improve Engineering Capability with design-hub',
+        'Hundsun Data Application Platform',
+        'Hundsun Frontend Development Guide'
+    ]
+};
+
+const projectIntro = {
+    'zh': {
+        text: '仅列举最近3年的部分项目',
+        link: '查看项目详情'
+    },
+    'en': {
+        text: 'Listing some projects from the last 3 years',
+        link: 'View Project Details'
+    }
+};
+
+// 在语言切换函数区添加这两个新函数
+function updateProjects(lang) {
+    const projectTitles = document.querySelectorAll('.projects-section .project-title');
+    const projectTaglines = document.querySelectorAll('.projects-section .project-tagline');
+    
+    projectTitles.forEach((title, index) => {
+        if (projects[lang][index]) {
+            title.querySelector('a').textContent = projects[lang][index];
+        }
+    });
+    
+    projectTaglines.forEach((tagline, index) => {
+        if (projects[lang][index]) {
+            tagline.textContent = lang === 'en' ? 
+                `Hundsun ${projects[lang][index]}` : 
+                `恒生${projects['zh'][index]}`;
+        }
+    });
+}
+
+function updateTechShares(lang) {
+    const shareItems = document.querySelectorAll('.projects-section + .projects-section .project-title a');
+    shareItems.forEach((item, index) => {
+        if (techShares[lang][index]) {
+            item.textContent = techShares[lang][index];
+        }
+    });
+}
+
+function updateProjectIntro(lang) {
+    const introElement = document.querySelector('.projects-section .intro p');
+    if (introElement) {
+        const linkElement = introElement.querySelector('a');
+        if (projectIntro[lang]) {
+            introElement.innerHTML = `${projectIntro[lang].text} <a href="https://shaqueoneal.github.io/html-profile/projects.html" style="font-weight:bold;">${projectIntro[lang].link}</a>`;
+        }
+    }
+}
+
+</script>
 </body>
 <script src="watermark.js"></script>
-<script>
-    const profiles = [
-        `<p>&emsp;&emsp;一名懂产品和技术的IT管理者。</p>
-        <p>&emsp;&emsp;工作和研究主要领域为BI、报表、低码、数据可视化、软件工程化管理和软件基础架构等。</p>
-        <p>&emsp;&emsp;作为团队长从0建设大数据前端团队，建立数据可视化团队、建立数智虚拟团队；是公司唯一在两个赛道同时完成挑战目项目的团队负责人。</p>
-        <p>&emsp;&emsp;作为产品经理，自发独立设计并指导开发了公司设计交付平台，使得公司设计交付效率提高5倍。</p>
-        <p>&emsp;&emsp;作为架构师，设计BI和报表系统整体架构，并进行性能优化。</p>
-        <p>&emsp;&emsp;作为技术专家曾跨部门帮助HUI解决资管长期以来的前端难题。多项发明专利。</p>
-        <p>&emsp;&emsp;公司优秀员工，认证导师，认证讲师。</p>
-        `,
-        `<p>&emsp;&emsp;一名热爱开发工作的软件工程师。</p>
-        <p>&emsp;&emsp;7年前一个偶然的工作变化让我领略了前端开发的魅力，从此我从一名后端、底层开发人员成为了一名前端开发工程师。在51信用卡工作期间我负责了PC端的大部分可视化项目。是前端可视化小组的负责人和催收业务的负责人。工作期间申请有两项专利，其中一项为公司每年节约上百万成本。</p>
-        <p>&emsp;&emsp;工作和研究的主要领域是数据可视化、软件工程化管理、软件基础架构等。</p>
-        `,
-
-        `<p>&emsp;&emsp;一名在开发一线摸爬滚打了十几年的老程序员。从底层的芯片驱动到linux系统内核再到网络、服务器，直到前端，把整个计算机系统从下到上捋了一遍；涉及行业从装备制造业到信息化服务再到互联网金融业，见证了IT行业的沧桑巨变。撸过代码，搞过项目，带过团队，开过培训，最终确定前端可视化作为自己的职业方向。有人说30多岁是程序员迷茫期，是的，但是就像长征，留下的都是精华。走过去，你才能说：踏遍青山人未老，风景这边独好！</p>
-        <p>&emsp;&emsp;7年前一个偶然的工作变化让我领略了前端开发的魅力，从此我从一名后端、底层开发人员成为了一名前端开发工程师。在51信用卡工作期间我负责了前端PC端的大部分可视化项目：可视化平台、光锥风控平台、知识图谱、关系图谱、宙斯风控系统、可视化数据大盘、数据地图等等。涉及的可视化框架有echarts，d3，gojs，hicharts，sigmajs等。可视化项目之外，本人贡献过公司内部开发的Vue组件库Vant和Want，也贡献过自主研发的业务控件，是催收呼叫中心唯一发明人和知识图谱知识产权的联合发明人，仅催收呼叫中心一项发明每年为公司节约上百万成本。</p>
-        <p>&emsp;&emsp;目前正在完善、推广阶段的大数据可视化平台是本人负责的面向全公司的一款数据可视化产品，对标tableau，网易有数和阿里quick bi。在部分特性上已经完全超越有数和quick bi，同时与内部系统做到无缝集成，是真正服务意义上的数据可视化产品。</p>
-        <p>&emsp;&emsp;如有幸加入贵公司，参与或主导可视化项目的开发，本人将提供完整的公司级别的可视化解决方案，大大缩短可视化项目的开发周期，并给予前端开发团队以经验指导。让可视化的数据来驱动业务，让不可见的数据产生可观的价值。</p>
-        `,
-    ];
-
-    let params = parseUrlParam(location.search);
-    if (params.name) {
-        let name = document.querySelector('.name');
-        name.innerText = decodeURIComponent(params.name);
-    }
-
-    if (params.mobile) {
-        let mobile = document.querySelector('.mobile a');
-        mobile.innerText = params.mobile;
-        mobile.href = 'tel:' + params.mobile;
-    }
-
-    let summaryIndex = params.summaryIndex ? +params.summaryIndex : 0;
-    let summary = document.querySelector('.summary');
-
-    let profile = profiles[summaryIndex];
-    if (params.online) {
-        profile += '<a href="https://shaqueoneal.github.io/html-profile/">点此访问在线简历</a>';
-    }
-    summary.innerHTML = profile;
-
-    let year = document.querySelector('#year');
-    year.innerText = (new Date()).getFullYear();
-</script>
 </html>
 

@@ -32,21 +32,17 @@
 <body>
 <div class="wrapper">
 	<div class="main-wrapper">
+        <!-- 添加语言切换按钮 -->
+        <div style="text-align: right; margin: 10px;">
+            <a href="#" onclick="switchLanguage('zh'); return false;" style="margin-right: 5px;">中文</a> | 
+            <a href="#" onclick="switchLanguage('en'); return false;" style="margin-left: 5px;">English</a>
+        </div>
 
 		<section class="section projects-section">
-			<h2 class="section-title"><span class="icon-holder"><i class="iconfont icon-th-large"></i></span>项目经历</h2>
+			<h2 class="section-title"><span class="icon-holder"><i class="iconfont icon-th-large"></i></span><span class="title-text">项目经历</span></h2>
 			<div class="intro">
-				<p>仅列举最近3年的部分项目</p>
+				<p class="intro-text">仅列举最近3年的部分项目</p>
 			</div><!--//intro-->
-<!--                <div class="item">-->
-<!--                    <span class="project-title"><a>低码平台</a></span>-->
-<!--                    <ul>-->
-<!--                        <li class="project-tagline">低码开发平台</li>-->
-<!--                        <li class="project-tagline">低码应用开发</li>-->
-<!--                        <li class="project-tagline">组件开发、插件开发、逻辑库开发</li>-->
-<!--                        <li class="project-tagline">技术栈：js, java</li>-->
-<!--                    </ul>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
                 <div class="item">
                     <span class="project-title"><a>数据应用平台</a></span>
                     <ul>
@@ -74,71 +70,6 @@
                         <li class="project-tagline">技术栈：vue2, java</li>
                     </ul>
                 </div>
-            <!--			<div class="item">-->
-<!--				<span class="project-title"><a>数据可视化平台</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">企业级的数据可视化平台，支持全业务嵌入</li>-->
-<!--					<li class="project-tagline">支持关系型数据库、HIVE、第三方HTTP API、剪贴板等多种数据源接入</li>-->
-<!--					<li class="project-tagline">支持多种表格、图形；支持多种数据聚合、筛选和下钻</li>-->
-<!--					<li class="project-tagline">技术栈：vue-jsx, echarts, element ui; egg.js</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>光锥可视化</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">一站式风控平台，集成风控各个流程</li>-->
-<!--					<li class="project-tagline">技术栈：vue, go.js</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>知识图谱</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">支持多维度多层级扩展的关系图谱</li>-->
-<!--					<li class="project-tagline">技术栈：vue, d3.js</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>陀飞轮</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">企业级大数据任务执行和调度平台</li>-->
-<!--					<li class="project-tagline">技术栈：vue, vis.js</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>元数据管理平台</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">企业级数据生命周期管理平台</li>-->
-<!--					<li class="project-tagline">技术栈：vue, vant</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>数据地图</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">大数据搜索门户</li>-->
-<!--					<li class="project-tagline">技术栈：vue, d3.js</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>数据大盘</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">贷款实时数据可视化大盘</li>-->
-<!--					<li class="project-tagline">技术栈：javascript, echarts</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>催收系统</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">贷款实时数据可视化大盘</li>-->
-<!--					<li class="project-tagline">技术栈：jQuery, bootstrap</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--			<div class="item">-->
-<!--				<span class="project-title"><a>Titan前端开发框架</a></span>-->
-<!--				<ul>-->
-<!--					<li class="project-tagline">后端人员也会用的前端框架</li>-->
-<!--					<li class="project-tagline">技术栈：vue</li>-->
-<!--				</ul>-->
-<!--			</div>&lt;!&ndash;//item&ndash;&gt;-->
 		</section><!--//section-->
 
 		<section class="projects-section section">
@@ -384,6 +315,134 @@
 		</a>`;
 
     carousel.innerHTML = carouselIndicators + carouselItems + nav;
+
+    // 添加语言切换功能
+    // 默认语言为中文
+    let currentLanguage = localStorage.getItem('language') || 'zh';
+    
+    // 页面加载时应用保存的语言设置
+    document.addEventListener('DOMContentLoaded', function() {
+        applyLanguage(currentLanguage);
+    });
+    
+    // 切换语言函数
+    function switchLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('language', lang);
+        applyLanguage(lang);
+    }
+    
+    // 应用语言设置
+    function applyLanguage(lang) {
+        if (lang === 'zh') {
+            // 应用中文
+            document.querySelector('.title-text').innerText = '项目经历';
+            document.querySelector('.intro-text').innerText = '仅列举最近3年的部分项目';
+            
+            // 更新项目标题和描述
+            updateProjectsContent('zh');
+            
+            // 更新轮播图标题和描述
+            updateCarouselContent('zh');
+            
+        } else if (lang === 'en') {
+            // 应用英文
+            document.querySelector('.title-text').innerText = 'Projects';
+            document.querySelector('.intro-text').innerText = 'Only listing some projects from the last 3 years';
+            
+            // 更新项目标题和描述
+            updateProjectsContent('en');
+            
+            // 更新轮播图标题和描述
+            updateCarouselContent('en');
+        }
+    }
+    
+    // 更新项目内容
+    function updateProjectsContent(lang) {
+        const projectTitles = {
+            'zh': ['数据应用平台', 'design-hub', '大数据平台'],
+            'en': ['Data Application Platform', 'Design Hub', 'Big Data Platform']
+        };
+        
+        const projectDescriptions = {
+            'zh': [
+                ['恒生BI平台', '数据分析、数据大屏一体化', '跨数据源、多种嵌入方式', '技术栈：vue, nodejs, java'],
+                ['产品设计交付开发的平台', '支持sketch、axure设计稿、原型稿直接预览', '支持在线评审', '技术栈：vue3, nodejs'],
+                ['大数据开发平台', '包括数据源、数据开发、运维监控等', '支持离线、实时', '技术栈：vue2, java']
+            ],
+            'en': [
+                ['Hundsun BI Platform', 'Integrated data analysis and data dashboard', 'Cross-data source, multiple embedding methods', 'Tech stack: vue, nodejs, java'],
+                ['Product design delivery and development platform', 'Support direct preview of sketch, axure design drafts', 'Support online review', 'Tech stack: vue3, nodejs'],
+                ['Big data development platform', 'Including data sources, data development, operation monitoring, etc.', 'Support offline and real-time', 'Tech stack: vue2, java']
+            ]
+        };
+        
+        // 更新项目标题
+        const projectTitleElements = document.querySelectorAll('.projects-section .project-title a');
+        projectTitleElements.forEach((element, index) => {
+            if (index < projectTitles[lang].length) {
+                element.innerText = projectTitles[lang][index];
+            }
+        });
+        
+        // 更新项目描述
+        const projectItems = document.querySelectorAll('.projects-section .item');
+        projectItems.forEach((item, index) => {
+            if (index < projectDescriptions[lang].length) {
+                const descriptionItems = item.querySelectorAll('.project-tagline');
+                descriptionItems.forEach((descItem, descIndex) => {
+                    if (descIndex < projectDescriptions[lang][index].length) {
+                        descItem.innerText = projectDescriptions[lang][index][descIndex];
+                    }
+                });
+            }
+        });
+    }
+    
+    // 更新轮播图内容
+    function updateCarouselContent(lang) {
+        const carouselCaptions = document.querySelectorAll('.carousel-caption');
+        
+        carouselCaptions.forEach((caption, index) => {
+            const projectName = caption.querySelector('h3');
+            const projectDesc = caption.querySelector('p');
+            
+            if (projectName && projectDesc) {
+                const project = projects[index];
+                
+                if (lang === 'zh') {
+                    projectName.innerText = project.name;
+                    projectDesc.innerText = project.description;
+                } else {
+                    // 英文版项目名称和描述
+                    const nameEn = {
+                        '数据应用平台': 'Data Application Platform',
+                        'design-hub': 'Design Hub',
+                        '在线视频剪辑': 'Online Video Editing',
+                        '大数据平台': 'Big Data Platform',
+                        '数据源': 'Data Source'
+                    };
+                    
+                    const descEn = {
+                        '数据应用平台': 'Data Application Platform',
+                        'design-hub': 'Design Hub',
+                        '在线视频剪辑平台': 'Online Video Editing Platform',
+                        '大数据平台': 'Big Data Platform',
+                        '数据源': 'Data Source'
+                    };
+                    
+                    projectName.innerText = nameEn[project.name] || project.name;
+                    projectDesc.innerText = descEn[project.description] || project.description;
+                }
+            }
+        });
+    }
+    
+    // 页面加载完成后应用当前语言设置
+    window.addEventListener('load', function() {
+        applyLanguage(currentLanguage);
+    });
 </script>
 </html>
 
